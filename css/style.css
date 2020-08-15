@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Garamond, serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* memulai header */
+/* hamburger menu */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header .hamburger-menu {
+    background-color: rgb(201, 197, 197);
+    height: 50px;
+    display: none;
+    justify-content: end;
+}
+
+header .icon {
+    background-color: cornsilk;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .icon>span:first-child {
+    margin-top: 15px;
+}
+
+header .icon>span {
+    background-color: rgb(141, 89, 12);
+    display: block;
+    margin-top: 4px;
+    width: 30px;
+    height: 5px;
+}
+
+/* selesai .hamburger-menu */
+/* memulai navbar */
+.navbar {
+    background-color: rgb(201, 197, 197);
+    height: 40px;
+
+}
+
+.navbar ul {
+    width: 33.33%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: large;
+}
+
+.navbar ul li a {
+    padding: 8px 8px;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(138, 134, 134);
+}
+
+.navbar ul li a:active {
+    color: red;
+}
+
+/* AKHIR DARI HEADER */
+
+/* MEMULAI MAIN */
+main {
+    padding-top: 30px;
+}
+
+main .logo {
+    padding: 20px;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+main .logo>h2 {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.5em;
+}
+
+main .logo>h2>span {
+    font-family: 'Niconne', cursive;
+    font-size: 2em;
+}
+
+main .title-content {
+    background-image: url('../image/Meja meeting-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(77, 70, 70);
+    opacity: 0.9;
+    margin-top: 15vh;
+}
+
+main .title-content h1 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+main .title-content h2 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+main>h3.title-product {
+    font-size: 2em;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: rgb(179, 170, 170);
+    border-radius: 15px;
+    border: 2px inset gainsboro;
+    text-align: center;
+    color: rgb(77, 70, 70);
+}
+
+main .product-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8vh;
+    position: relative;
+}
+
+main .product-content .product-content1,
+.product-content2,
+.product-content3,
+.product-content4 {
+    width: 22%;
+    border: 2px inset rgb(212, 212, 212);
+    border-radius: 5px 5px 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+main .product-content1 img,
+.product-content2 img,
+.product-content3 img,
+.product-content4 img {
+    display: block;
+    width: 100%;
+    height: 35vh;
+}
+
+main .product-content1 p,
+.product-content2 p,
+.product-content3 p,
+.product-content4 p {
+    font-size: 1.07em;
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* MULAI ABOUT COMPANY */
+main .about-company h3 {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.5em;
+    padding: 20px 20px 20px 0;
+    margin-left: 20px;
+    margin-top: 5vh;
+    border-bottom: 2px solid rgb(168, 161, 161);
+    width: 50%
+}
+
+main .about-company h3>span {
+    font-family: 'Niconne', cursive;
+    font-size: 2em;
+}
+
+main .about-company p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 20px;
+}
+
+/* memulai about company1 */
+
+main .about-company1 {
+    display: flex;
+    border: 1px solid rgb(231, 14, 14);
+    margin: 40px 20px 20px;
+}
+
+.about-company1 .payment {
+    width: 50%;
+    border: 2px solid rgb(116, 94, 94);
+}
+
+.about-company1 .FAQ {
+    width: 25%;
+    border: 1px solid rgb(160, 21, 21);
+}
+
+.about-company1 .contact {
+    width: 25%;
+    border: 1px solid rgb(49, 9, 9);
+}

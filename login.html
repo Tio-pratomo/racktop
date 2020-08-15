@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <script src="./javascript/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="./index.html#about">Tentang</a></li>
+                <li><a href="#">Sign Out</a></li>
+                <li><a href="#form">Log In</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="logo">
+            <h2><span>R</span>-ack Top</h2>
+        </div>
+        <br><br><br><br><br><br>
+
+        <!-- Membuat form login -->
+        <div class="section" id="form">
+            <form action="#">
+                <div class="nama">
+                    <label for="nama">nama</label><br>
+                    <input type="text" name="input-nama" id="nama">
+                </div>
+                <div class="password">
+                    <label for="pass">password</label><br>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <button>Login</button>
+                <p>
+                    <a href="#">klik disini</a>
+                    jika anda lupa password
+                </p>
+                <p>atau login dengan</p>
+                <div class="login-with">
+                    <a href="#">
+                        <img src="./image/gmail-logo.svg" alt="gmail" width="30" height="30">
+                    </a>
+                    <a href="#">
+                        <img src="./image/facebook.png" alt="facebook" width="30" height="30">
+                    </a>
+                    <a href="#">
+                        <img src="./image/twitter.png" alt="twitter" width="30" height="30">
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <script src="./javascript/script.js"></script>
+    </main>
+</body>
+
+</html>

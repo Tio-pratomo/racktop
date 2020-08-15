@@ -1,0 +1,195 @@
+/* SMARTPHONE */
+@media only screen and (max-width: 600px) {
+
+    /* HEADER */
+    header .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar {
+        height: 200px;
+        display: none;
+        background-color: rgb(230, 227, 219);
+    }
+
+    .navbar ul {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 5px 5px;
+    }
+
+    .navbar ul li a {
+        color: rgb(148, 83, 83);
+    }
+
+
+    /* AKHIR HEADER */
+    /* MEMULAI MAIN */
+    main .logo {
+        padding-top: 40px;
+    }
+
+    main .logo>h2 {
+        font-size: 1.25em;
+    }
+
+    main .logo>h2>span {
+        font-size: 2em;
+
+    }
+
+    main .title-content {
+        height: 50vh;
+    }
+
+    main .title-content h1 {
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    main .title-content h2 {
+        font-size: 15px;
+    }
+
+    main>h3.title-product {
+        font-size: 1.5em;
+    }
+
+    main .product-content {
+        flex-direction: column;
+    }
+
+    main .product-content .product-content1,
+    .product-content2,
+    .product-content3,
+    .product-content4 {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    main .product-content2,
+    .product-content3,
+    .product-content4 {
+        margin-top: 30px;
+    }
+
+    main .product-content1 img,
+    .product-content2 img,
+    .product-content3 img,
+    .product-content4 img {
+        height: 40vh;
+    }
+
+    /* Mulai about Company */
+    main .about-company h3 {
+        width: 75%
+    }
+}
+
+
+
+/* SMARTPHONE TO TABLET */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .navbar ul {
+        width: 83.33%;
+    }
+
+    .navbar ul li:first-child {
+        margin-left: 50px;
+    }
+
+    .navbar ul li:nth-child(1)~li {
+        margin-left: 20px;
+    }
+
+    .navbar ul li a {
+        padding: 5px 15px;
+    }
+
+    main .title-content {
+        margin-top: 13vh;
+    }
+
+    main .title-content h1 {
+        font-size: 25px;
+        margin-top: 100px;
+    }
+
+    main .title-content h2 {
+        font-size: 20px;
+    }
+
+    main .product-content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main .product-content .product-content1,
+    .product-content2,
+    .product-content3,
+    .product-content4 {
+        margin-right: auto;
+        width: 47%;
+    }
+
+    main .product-content1 img,
+    .product-content2 img,
+    .product-content3 img,
+    .product-content4 img {
+        height: 30vh;
+    }
+
+    /* Memulai .about-company */
+    main .about-company h3 {
+        width: 75%
+    }
+}
+
+/* TABLET TO DESKTOP */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar ul {
+        width: 66.66%;
+    }
+
+    .navbar ul li:first-child {
+        margin-left: 50px;
+    }
+
+    .navbar ul li:nth-child(1)~li {
+        margin-left: 20px;
+    }
+
+    .navbar ul li a {
+        padding: 5px 15px;
+    }
+
+    /* Memulai Main */
+    main .title-content {
+        margin-top: 13.5vh;
+    }
+
+    main .product-content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main .product-content .product-content1,
+    .product-content2,
+    .product-content3,
+    .product-content4 {
+        margin-right: auto;
+        width: 48%;
+    }
+
+    /* Memulai .about-company */
+    main .about-company h3 {
+        width: 75%
+    }
+}
