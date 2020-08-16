@@ -108,15 +108,70 @@ main .logo>h2>span {
 
 /* Memulai section form login */
 .section {
-    border: 1px solid #000;
     width: 100%;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 form {
-    border: 1px solid rgb(238, 40, 40);
+    border: 2px solid rgb(238, 40, 40);
+    border-radius: 10px;
     width: 25%;
+    font-size: 1.2em;
+    padding: 40px;
+}
+
+form input {
+    width: 100%;
+    height: 5vh;
+    border: 1px solid rgb(238, 213, 213);
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+form .password {
+    margin: 2vh 0;
+    padding-bottom: 2vh;
+}
+
+button {
+    width: 25%;
+    height: 6vh;
+    border-radius: 2px;
+    margin-bottom: 2vh;
+}
+
+p.login-with {
+    margin: 2vh 0;
+}
+
+div.login-with {
+    display: flex;
+    justify-content: center;
+}
+
+div.login-with a {
+    display: inline-block;
+    width: 25%;
+    height: 5vh;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+div.login-with a:nth-child(1) {
+    background-color: red;
+}
+
+div.login-with a:nth-child(2) {
+    background-color: rgb(154, 154, 250);
+}
+
+div.login-with a:nth-child(3) {
+    background-color: rgb(209, 209, 243);
+}
+
+div.login-with img {
+    width: 75%;
+    margin-left: 0.5vw;
 }

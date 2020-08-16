@@ -91,6 +91,11 @@
     main .about-company h3 {
         width: 75%
     }
+
+    /* MEMULAI PAGE FORMULIR */
+    form {
+        width: 75%;
+    }
 }
 
 
@@ -150,6 +155,11 @@
     main .about-company h3 {
         width: 75%
     }
+
+    /* MEMULAI PAGE FORMULIR */
+    form {
+        width: 50%;
+    }
 }
 
 /* TABLET TO DESKTOP */
@@ -191,5 +201,10 @@
     /* Memulai .about-company */
     main .about-company h3 {
         width: 75%
+    }
+
+    /* MEMULAI PAGE FORMULIR */
+    form {
+        width: 50%;
     }
 }

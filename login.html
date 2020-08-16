@@ -41,28 +41,32 @@
         <div class="section" id="form">
             <form action="#">
                 <div class="nama">
-                    <label for="nama">nama</label><br>
-                    <input type="text" name="input-nama" id="nama">
+                    <label for="email">
+                        email<br>
+                        <input type="email" placeholder="masukan email" name="input-nama" id="email" required>
+                    </label><br>
                 </div>
                 <div class="password">
-                    <label for="pass">password</label><br>
-                    <input type="password" name="password" id="pass">
+                    <label for="pass">
+                        password<br>
+                        <input type="password" placeholder="masukan password" name="password" id="pass" required>
+                    </label><br>
                 </div>
-                <button>Login</button>
-                <p>
+                <button type="submit">Login</button>
+                <p class="below-submit">
                     <a href="#">klik disini</a>
                     jika anda lupa password
                 </p>
-                <p>atau login dengan</p>
+                <p class="login-with">atau login dengan</p>
                 <div class="login-with">
                     <a href="#">
                         <img src="./image/gmail-logo.svg" alt="gmail" width="30" height="30">
                     </a>
                     <a href="#">
-                        <img src="./image/facebook.png" alt="facebook" width="30" height="30">
+                        <img src="./image/facebook.svg" alt="facebook" width="30" height="30">
                     </a>
                     <a href="#">
-                        <img src="./image/twitter.png" alt="twitter" width="30" height="30">
+                        <img src="./image/twitter.svg" alt="twitter" width="30" height="30">
                     </a>
                 </div>
             </form>
