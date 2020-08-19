@@ -51,7 +51,7 @@
 
     main .title-content h1 {
         font-size: 25px;
-        margin-top: 60px;
+        margin-top: 5vh;
     }
 
     main .title-content h2 {
@@ -92,9 +92,42 @@
         width: 75%
     }
 
+    main .about-company1 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about-company1 .payment,
+    .about-company1 .FAQ,
+    .about-company1 .contact {
+        width: 100%;
+    }
+
+    .about-company1 .FAQ,
+    .about-company1 .contact {
+        margin-top: 5vh;
+    }
+
     /* MEMULAI PAGE FORMULIR */
+    .section {
+        margin-top: 3vh;
+    }
+
     form {
         width: 75%;
+    }
+
+    /* MODAL SIGNUP */
+    /* Clear fix */
+    .clearfix {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cancelbtn,
+    .signup {
+        width: 49%;
     }
 }
 
@@ -154,6 +187,23 @@
     /* Memulai .about-company */
     main .about-company h3 {
         width: 75%
+    }
+
+    main .about-company1 {
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .about-company1 .payment,
+    .about-company1 .FAQ,
+    .about-company1 .contact {
+        width: 100%;
+    }
+
+    .about-company1 .FAQ,
+    .about-company1 .contact {
+        margin-top: 5vh;
     }
 
     /* MEMULAI PAGE FORMULIR */
