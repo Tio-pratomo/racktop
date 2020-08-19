@@ -172,7 +172,7 @@ main .product-content {
     position: relative;
 }
 
-main .product-content .product-content1,
+.product-content1,
 .product-content2,
 .product-content3,
 .product-content4 {
@@ -183,7 +183,7 @@ main .product-content .product-content1,
     cursor: pointer;
 }
 
-main .product-content1 img,
+.product-content1 img,
 .product-content2 img,
 .product-content3 img,
 .product-content4 img {
@@ -192,7 +192,7 @@ main .product-content1 img,
     height: 35vh;
 }
 
-main .product-content1 p,
+.product-content1 p,
 .product-content2 p,
 .product-content3 p,
 .product-content4 p {
@@ -232,6 +232,7 @@ main .about-company p {
 main .about-company1 {
     display: flex;
     margin: 40px 20px 20px;
+    align-items: baseline;
 }
 
 .about-company1 .payment {
