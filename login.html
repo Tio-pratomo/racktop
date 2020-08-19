@@ -25,8 +25,8 @@
             <ul>
                 <li><a href="./index.html">Beranda</a></li>
                 <li><a href="./index.html#about">Tentang</a></li>
-                <li><a href="#">Sign Out</a></li>
-                <li><a href="#form">Log In</a></li>
+                <li>Sign Out</li>
+                <li><a href="#form-login">Log In</a></li>
             </ul>
         </div>
     </header>
@@ -38,12 +38,12 @@
         <br><br><br><br><br><br>
 
         <!-- Membuat form login -->
-        <div class="section" id="form">
+        <div class="section" id="form-login">
             <form action="#">
                 <div class="nama">
-                    <label for="email">
+                    <label for="email-login">
                         email<br>
-                        <input type="email" placeholder="masukan email" name="input-nama" id="email" required>
+                        <input type="email" placeholder="masukan email" name="input-nama" id="email-login" required>
                     </label><br>
                 </div>
                 <div class="password">
@@ -71,9 +71,47 @@
                 </div>
             </form>
         </div>
-
-        <script src="./javascript/script.js"></script>
     </main>
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+        <span class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="#">
+            <div class="container">
+                <h1>Sign Up</h1><br>
+                <p>Silahkan isi formulir di bawah ini untuk membuat akun.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="text" placeholder="Masukan Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="Masukan Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input id="psw-repeat" type="password" placeholder="Ulangi Password" name="psw-repeat" required>
+
+                <label class="remember">
+                    <input type="checkbox" checked="checked" name="remember"> Ingatkan Saya
+                </label>
+
+                <p>Dengan membuat akun ini anda setuju dengan <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                </p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">
+                        Cancel
+                    </button>
+                    <button type="submit" class="signup">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>
