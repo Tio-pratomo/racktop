@@ -72,6 +72,22 @@ header .icon>span {
     font-size: large;
 }
 
+.navbar ul li:nth-child(3) {
+    padding: 8px 8px;
+    display: block;
+    color: whitesmoke;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.navbar ul li:nth-child(3):hover {
+    background-color: rgb(138, 134, 134);
+}
+
+.navbar ul li:nth-child(3):active {
+    color: red;
+}
+
 .navbar ul li a {
     padding: 8px 8px;
     display: block;
@@ -215,21 +231,181 @@ main .about-company p {
 
 main .about-company1 {
     display: flex;
-    border: 1px solid rgb(231, 14, 14);
     margin: 40px 20px 20px;
 }
 
 .about-company1 .payment {
     width: 50%;
-    border: 2px solid rgb(116, 94, 94);
+    font-size: 1.13em;
+}
+
+.about-company1 .payment h3 {
+    margin-bottom: 5vh;
+}
+
+.about-company1 .payment img {
+    width: 75%;
+    height: auto;
 }
 
 .about-company1 .FAQ {
     width: 25%;
-    border: 1px solid rgb(160, 21, 21);
+}
+
+.about-company1 .FAQ h3 {
+    font-size: 1.13em;
+    margin-bottom: 3vh;
+}
+
+.about-company1 .FAQ a {
+    background-color: rgb(201, 201, 201);
+    padding: 2.5px 5px;
+    display: inline-block;
+    margin: 1vh 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-company1 .FAQ a:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 .about-company1 .contact {
     width: 25%;
-    border: 1px solid rgb(49, 9, 9);
+    margin-bottom: 3vh;
+}
+
+.about-company1 .contact h3 {
+    font-size: 1.13em;
+}
+
+.about-company1 .contact li {
+    margin: 2vh 0;
+    font-size: 1.025em;
+}
+
+
+
+
+/* SIGN UP MODAL */
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: rgb(175, 255, 242);
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2f3238e8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 15;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #00194e;
+    padding-top: 50px;
+    opacity: 0.97;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear fix */
+.clearfix {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cancel,
+.signup {
+    width: 45%;
 }
