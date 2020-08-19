@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
-                <li><a href="#">Sign Out</a></li>
+                <li>Sign Out</li>
                 <li><a href="./login.html">Log In</a></li>
             </ul>
         </div>
@@ -63,7 +63,8 @@
             </div>
         </div>
 
-        <div class="about-company" id="about">
+        <span id="about"></span>
+        <div class="about-company">
             <h3><span>R</span>-ack Top</h3>
             <p>
                 Toko furniture dengan harga bersaing dengan kualitas sesuai dengan yang anda inginkan. <br>Kami
@@ -100,6 +101,74 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <h3>Temukan Kami di media sosial</h3>
+        <div class="social-media">
+            <a href="#">
+                <img src="./image/facebook.png" alt="facebook" width="40" height="40">
+            </a>
+            <a href="#">
+                <img src="./image/twitter.png" alt="twitter" width="40" height="40">
+            </a>
+            <a href="#">
+                <img src="./image/instagram.png" alt="instagram" width="50" height="50">
+            </a>
+            <a href="#">
+                <img src="./image/pinterest.png" alt="pinterest" width="40" height="40">
+            </a>
+        </div>
+        <div class="office-address">
+            <p class="title">Alamat Kantor</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est et tenetur aperiam minima atque
+                eveniet,mollitia nesciunt nisi debitis inventore, aliquid eius velit reiciendis esse, distinctio a dolor
+                cum!
+                Neque.
+            </p>
+        </div>
+        <div class="showroom-adress">
+            <p class="title">
+                Alamat Showroom
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea rem officiis quod nam dolores error, quidem
+                nihil asperiores numquam, sint distinctio. Quaerat eum voluptatem similique?
+            </p>
+        </div>
+    </footer>
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+        <span class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="#">
+            <div class="container">
+                <h1>Sign Up</h1><br>
+                <p>Silahkan isi formulir di bawah ini untuk membuat akun.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input id="email" type="text" placeholder="Masukan Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="psw" type="password" placeholder="Masukan Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input id="psw-repeat" type="password" placeholder="Ulangi Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ingatkan Saya
+                </label>
+
+                <p>Dengan membuat akun ini anda setuju dengan <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                </p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signup">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <script src="./javascript/script.js"></script>
 </body>
