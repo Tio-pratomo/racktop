@@ -4,6 +4,7 @@
     /* HEADER */
     header .hamburger-menu {
         display: flex;
+        justify-content: flex-end;
     }
 
     .navbar {
