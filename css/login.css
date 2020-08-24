@@ -146,11 +146,6 @@ form input {
     margin: 2vh 0;
 }
 
-form .password {
-    margin: 2vh 0;
-    padding-bottom: 2vh;
-}
-
 button {
     width: 25%;
     height: 6vh;
