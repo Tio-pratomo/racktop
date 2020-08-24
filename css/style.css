@@ -13,6 +13,10 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* memulai header */
 /* hamburger menu */
 header {
@@ -25,7 +29,6 @@ header .hamburger-menu {
     background-color: rgb(201, 197, 197);
     height: 50px;
     display: none;
-    justify-content: flex-end;
 }
 
 header .icon {
@@ -285,8 +288,82 @@ main .about-company1 {
     font-size: 1.025em;
 }
 
+/* FOOTER */
+footer {
+    background-color: #2f3238e8;
+    color: white;
+}
 
+footer .title-footer {
+    margin-left: 25px;
+    margin-top: 10vh;
+    padding-top: 5vh;
+}
 
+.social-media {
+    margin: 3vh 0 2vh 20px;
+}
+
+.social-media img[alt="facebook"] {
+    transition: all 0.5s;
+}
+
+.social-media img[alt="facebook"]:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.social-media img[alt="twitter"] {
+    transition: all 0.5s;
+}
+
+.social-media img[alt="twitter"]:hover {
+    background-color: rgb(145, 201, 253);
+    border-radius: 5px;
+}
+
+.social-media img[alt="instagram"] {
+    transition: all 0.5s;
+}
+
+.social-media img[alt="instagram"]:hover {
+    background-color: rgb(255, 112, 112);
+    border-radius: 5px;
+}
+
+.social-media img[alt="pinterest"] {
+    transition: all 0.5s;
+}
+
+.social-media img[alt="pinterest"]:hover {
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-around;
+}
+
+.address p {
+    margin-top: 3vh;
+}
+
+.office-address {
+    width: 46%;
+}
+
+.showroom-address {
+    width: 46%;
+}
+
+p.copyright {
+    text-align: center;
+    margin-top: 10vh;
+    padding: 3vh 0;
+    border-top: 1px solid rgb(255, 240, 240);
+    font-size: 1.05em;
+}
 
 /* SIGN UP MODAL */
 /* Full-width input fields */
@@ -321,11 +398,6 @@ button {
 
 button:hover {
     opacity: 1;
-}
-
-/* FOOTER */
-footer {
-    background-color: #2f3238e8;
 }
 
 /* Extra styles for the cancel button */
