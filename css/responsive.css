@@ -113,6 +113,26 @@
         margin-top: 5vh;
     }
 
+    /* MEMULAI FOOTER */
+    .address {
+        display: block;
+    }
+
+    .office-address {
+        width: 85%;
+        margin: 0 auto 3vh;
+    }
+
+    .showroom-address {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    p.copyright {
+        font-size: 0.9em;
+    }
+
+
     /* MEMULAI PAGE FORMULIR */
     .section {
         margin-top: 3vh;
@@ -268,5 +288,10 @@
     /* MEMULAI PAGE FORMULIR */
     form {
         width: 50%;
+    }
+
+    /* LOGIN DENGAN GOOGLE FACEBOOK TWITTER */
+    div.login-with {
+        justify-content: space-around;
     }
 }
