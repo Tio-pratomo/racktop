@@ -343,6 +343,7 @@ footer .title-footer {
 .address {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
 .address p {
