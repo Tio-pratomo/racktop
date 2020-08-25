@@ -138,8 +138,15 @@
         margin-top: 3vh;
     }
 
-    form {
-        width: 75%;
+    form.log-in {
+        width: 100%;
+        height: 550px;
+        border: none;
+    }
+
+    div.login-with {
+        justify-content: space-around;
+        width: 100%;
     }
 
     /* MODAL SIGNUP */
@@ -159,7 +166,7 @@
 
 
 /* SMARTPHONE TO TABLET */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
     .navbar ul {
         width: 83.33%;
     }
@@ -236,13 +243,20 @@
     }
 
     /* MEMULAI PAGE FORMULIR */
-    form {
-        width: 50%;
+    form.log-in {
+        width: 75%;
+        border: none;
+        height: 600px;
+    }
+
+    div.login-with {
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
 /* TABLET TO DESKTOP */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
     .navbar ul {
         width: 66.66%;
     }
@@ -286,8 +300,14 @@
     }
 
     /* MEMULAI PAGE FORMULIR */
-    form {
-        width: 50%;
+    form.log-in {
+        width: 75%;
+        height: 550px;
+    }
+
+    div.login-with {
+        justify-content: space-between;
+        width: 100%;
     }
 
     /* LOGIN DENGAN GOOGLE FACEBOOK TWITTER */
