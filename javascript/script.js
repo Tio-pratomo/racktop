@@ -10,4 +10,8 @@ $(document).ready(function () {
     $('.close').click(function () {
         $('.modal').hide('fast');
     });
+
+    $('.modal').click(function () {
+        $(this).hide('fast');
+    });
 });
