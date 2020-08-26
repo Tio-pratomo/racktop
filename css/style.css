@@ -514,6 +514,8 @@ hr {
     font-weight: bold;
     margin-right: 10px;
     cursor: pointer;
+    display: block;
+    padding: 5px;
 }
 
 .clear {
