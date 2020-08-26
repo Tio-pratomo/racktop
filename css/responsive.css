@@ -161,6 +161,20 @@
     .signup {
         width: 49%;
     }
+
+    /* MEMULAI MODAL IMAGE KLIK GAMBAR */
+    .modal-image-content {
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    .modal-image-content img {
+        margin-top: 10vh;
+        margin-left: 14.5vw;
+        width: 72%;
+        height: 55%;
+    }
 }
 
 
@@ -253,6 +267,20 @@
         justify-content: space-between;
         width: 100%;
     }
+
+    /* MEMULAI MODAL IMAGE KLIK GAMBAR */
+    .modal-image-content {
+        width: 75%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+    .modal-image-content img {
+        margin-top: 10vh;
+        margin-left: 14.5vw;
+        width: 65%;
+        height: 70%;
+    }
 }
 
 /* TABLET TO DESKTOP */
@@ -313,5 +341,19 @@
     /* LOGIN DENGAN GOOGLE FACEBOOK TWITTER */
     div.login-with {
         justify-content: space-around;
+    }
+
+    /* MEMULAI MODAL IMAGE KLIK GAMBAR */
+    .modal-image-content {
+        width: 75%;
+        height: 60vh;
+        margin: 0 auto;
+    }
+
+    .modal-image-content img {
+        margin-top: 10vh;
+        margin-left: 14.5vw;
+        width: 65%;
+        height: 70%;
     }
 }

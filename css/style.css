@@ -483,3 +483,56 @@ hr {
 .signup {
     width: 45%;
 }
+
+/* Modal IMAGE KLIK GAMBAR*/
+.mod-img-1,
+.mod-img-2,
+.mod-img-3,
+.mod-img-4 {
+    display: none;
+    padding-top: 30vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 15;
+}
+
+.modal-image-content {
+    background-color: #fefefe;
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.close-modal-image {
+    color: #ff0000;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.clear {
+    clear: right;
+}
+
+.close-modal-image:hover,
+.close-modal-image:active {
+    color: #000;
+}
+
+.modal-image-content img {
+    margin-top: 10vh;
+    margin-left: 14.5vw;
+    width: 40%;
+    height: 65%;
+}
+
+.modal-image-content p {
+    text-align: center;
+    margin-top: 10px;
+}
