@@ -207,6 +207,7 @@ footer .title-footer {
 
 .social-media img[alt="twitter"] {
     transition: all 0.5s;
+    margin-left: 1vw;
 }
 
 .social-media img[alt="twitter"]:hover {
@@ -216,6 +217,7 @@ footer .title-footer {
 
 .social-media img[alt="instagram"] {
     transition: all 0.5s;
+    margin-left: 1vw;
 }
 
 .social-media img[alt="instagram"]:hover {
@@ -225,6 +227,7 @@ footer .title-footer {
 
 .social-media img[alt="pinterest"] {
     transition: all 0.5s;
+    margin-left: 1vw;
 }
 
 .social-media img[alt="pinterest"]:hover {
