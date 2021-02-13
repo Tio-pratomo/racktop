@@ -1,6 +1,5 @@
 /* SMARTPHONE */
 @media only screen and (max-width: 600px) {
-
     /* HEADER */
     header .hamburger-menu {
         display: flex;
@@ -34,21 +33,8 @@
         color: rgb(148, 83, 83);
     }
 
-
     /* AKHIR HEADER */
     /* MEMULAI MAIN */
-    main .logo {
-        padding-top: 40px;
-    }
-
-    main .logo>h2 {
-        font-size: 1.25em;
-    }
-
-    main .logo>h2>span {
-        font-size: 2em;
-
-    }
 
     main .title-content {
         height: 50vh;
@@ -63,7 +49,7 @@
         font-size: 15px;
     }
 
-    main>h3.title-product {
+    main > h3.title-product {
         font-size: 1.5em;
     }
 
@@ -94,7 +80,7 @@
 
     /* Mulai about Company */
     main .about-company h3 {
-        width: 75%
+        width: 75%;
     }
 
     main .about-company1 {
@@ -131,7 +117,6 @@
     p.copyright {
         font-size: 0.9em;
     }
-
 
     /* MEMULAI PAGE FORMULIR */
     .section {
@@ -177,8 +162,6 @@
     }
 }
 
-
-
 /* SMARTPHONE TO TABLET */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .navbar ul {
@@ -189,7 +172,7 @@
         margin-left: 50px;
     }
 
-    .navbar ul li:nth-child(1)~li {
+    .navbar ul li:nth-child(1) ~ li {
         margin-left: 20px;
     }
 
@@ -236,7 +219,7 @@
 
     /* Memulai .about-company */
     main .about-company h3 {
-        width: 75%
+        width: 75%;
     }
 
     main .about-company1 {
@@ -293,7 +276,7 @@
         margin-left: 50px;
     }
 
-    .navbar ul li:nth-child(1)~li {
+    .navbar ul li:nth-child(1) ~ li {
         margin-left: 20px;
     }
 
@@ -324,7 +307,7 @@
 
     /* Memulai .about-company */
     main .about-company h3 {
-        width: 75%
+        width: 75%;
     }
 
     /* MEMULAI PAGE FORMULIR */

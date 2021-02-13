@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id-ID" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./javascript/angular.min.js"></script>
+
+    <div ng-controller="myCtrl" id="container" class="container" ng-style="container">
+        <div ng-repeat="x in items" class="card" ng-style="card">
+            <img ng-src="{{x.pict}}" alt="logo" width="90%" height="auto" ng-style="img">
+            <p>{{x.name}}</p>
+            <p>Harga : {{x.price | currency: 'Rp' : 0}}</p>
+        </div>
+    </div>
+
+
+    <script src="./javascript/angular-1.js"></script>
+</body>
+
+</html>

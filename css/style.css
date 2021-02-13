@@ -21,13 +21,14 @@ a {
 /* hamburger menu */
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 5px 0 5px 2px rgb(138, 134, 134);
 }
 
 header .hamburger-menu {
     background-color: rgb(201, 197, 197);
-    height: 50px;
     display: none;
 }
 
@@ -42,11 +43,11 @@ header .icon {
     cursor: pointer;
 }
 
-header .icon>span:first-child {
+header .icon > span:first-child {
     margin-top: 15px;
 }
 
-header .icon>span {
+header .icon > span {
     background-color: rgb(141, 89, 12);
     display: block;
     margin-top: 4px;
@@ -58,13 +59,13 @@ header .icon>span {
 /* memulai navbar */
 .navbar {
     background-color: rgb(201, 197, 197);
-    height: 40px;
-
+    height: 5vh;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
     width: 33.33%;
-    height: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,6 +82,10 @@ header .icon>span {
     color: whitesmoke;
     transition: all 0.5s;
     cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
 .navbar ul li:nth-child(3):hover {
@@ -97,6 +102,10 @@ header .icon>span {
     text-decoration: none;
     color: whitesmoke;
     transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
 .navbar ul li a:hover {
@@ -110,27 +119,6 @@ header .icon>span {
 /* AKHIR DARI HEADER */
 
 /* MEMULAI MAIN */
-main {
-    padding-top: 30px;
-}
-
-main .logo {
-    padding: 20px;
-    background-color: whitesmoke;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-}
-
-main .logo>h2 {
-    font-family: "Comic Sans MS", cursive;
-    font-size: 1.5em;
-}
-
-main .logo>h2>span {
-    font-family: 'Niconne', cursive;
-    font-size: 2em;
-}
 
 main .title-content {
     background-image: url('../image/Meja meeting-3.png');
@@ -141,13 +129,12 @@ main .title-content {
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: rgb(77, 70, 70);
+    color: #c7cfb7;
     opacity: 0.9;
-    margin-top: 15vh;
 }
 
 main .title-content h1 {
-    margin-top: 50px;
+    margin-top: 15vh;
     font-size: 50px;
 }
 
@@ -156,15 +143,18 @@ main .title-content h2 {
     font-size: 30px;
 }
 
-main>h3.title-product {
+main > h3.title-product {
     font-size: 2em;
-    padding: 10px;
     margin-top: 50px;
-    background-color: rgb(179, 170, 170);
-    border-radius: 15px;
-    border: 2px inset gainsboro;
     text-align: center;
-    color: rgb(77, 70, 70);
+    color: #557174;
+    margin-bottom: 2vh;
+}
+
+hr.line-title {
+    border: 1px solid #557174;
+    margin: 0.5em auto;
+    width: 75%;
 }
 
 main .product-content {
@@ -172,7 +162,6 @@ main .product-content {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 8vh;
-    position: relative;
 }
 
 .product-content1,
@@ -200,26 +189,28 @@ main .product-content {
 .product-content3 p,
 .product-content4 p {
     font-size: 1.07em;
-    background-color: white;
-    width: 40%;
+    background-color: #f7f7e8;
+    width: 100%;
     text-align: center;
     position: absolute;
     bottom: 0;
     right: 0;
+    color: #557174;
 }
 
 /* MULAI ABOUT COMPANY */
 main .about-company h3 {
-    font-family: "Comic Sans MS", cursive;
+    font-family: 'Comic Sans MS', cursive;
     font-size: 1.5em;
     padding: 20px 20px 20px 0;
     margin-left: 20px;
     margin-top: 5vh;
-    border-bottom: 2px solid rgb(168, 161, 161);
-    width: 50%
+    border-bottom: 2px solid #557174;
+    width: 50%;
+    color: #557174;
 }
 
-main .about-company h3>span {
+main .about-company h3 > span {
     font-family: 'Niconne', cursive;
     font-size: 2em;
 }
@@ -236,6 +227,7 @@ main .about-company1 {
     display: flex;
     margin: 40px 20px 20px;
     align-items: baseline;
+    color: #557174;
 }
 
 .about-company1 .payment {
@@ -262,16 +254,17 @@ main .about-company1 {
 }
 
 .about-company1 .FAQ a {
-    background-color: rgb(201, 201, 201);
+    background-color: #557174;
     padding: 2.5px 5px;
     display: inline-block;
     margin: 1vh 0;
     border-radius: 5px;
     text-decoration: none;
+    color: #f7f7e8;
 }
 
 .about-company1 .FAQ a:hover {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(201, 201, 201);
 }
 
 .about-company1 .contact {
@@ -304,41 +297,41 @@ footer .title-footer {
     margin: 3vh 0 2vh 20px;
 }
 
-.social-media img[alt="facebook"] {
+.social-media img[alt='facebook'] {
     transition: all 0.5s;
 }
 
-.social-media img[alt="facebook"]:hover {
+.social-media img[alt='facebook']:hover {
     background-color: blue;
     border-radius: 5px;
 }
 
-.social-media img[alt="twitter"] {
+.social-media img[alt='twitter'] {
     transition: all 0.5s;
     margin-left: 1vw;
 }
 
-.social-media img[alt="twitter"]:hover {
+.social-media img[alt='twitter']:hover {
     background-color: rgb(145, 201, 253);
     border-radius: 5px;
 }
 
-.social-media img[alt="instagram"] {
+.social-media img[alt='instagram'] {
     transition: all 0.5s;
     margin-left: 1vw;
 }
 
-.social-media img[alt="instagram"]:hover {
+.social-media img[alt='instagram']:hover {
     background-color: rgb(255, 112, 112);
     border-radius: 5px;
 }
 
-.social-media img[alt="pinterest"] {
+.social-media img[alt='pinterest'] {
     transition: all 0.5s;
     margin-left: 1vw;
 }
 
-.social-media img[alt="pinterest"]:hover {
+.social-media img[alt='pinterest']:hover {
     background-color: rgb(255, 0, 0);
     border-radius: 5px;
 }
@@ -371,8 +364,8 @@ p.copyright {
 
 /* SIGN UP MODAL */
 /* Full-width input fields */
-input[type=text],
-input[type=password] {
+input[type='text'],
+input[type='password'] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -382,15 +375,15 @@ input[type=password] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus,
-input[type=password]:focus {
+input[type='text']:focus,
+input[type='password']:focus {
     background-color: rgb(175, 255, 242);
     outline: none;
 }
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
