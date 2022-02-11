@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand-medium', sans-serif;
+    max-width: 1366px;
+}

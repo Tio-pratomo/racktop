@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Quicksand-bold';
+    font-weight: bold;
+    src: url('../../../assets/font/Quicksand-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Quicksand-light';
+    src: url('../../../assets/font/Quicksand-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Quicksand-medium';
+    font-weight: 500;
+    src: url('../../../assets/font/Quicksand-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    src: url('../../../assets/font/Quicksand-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Quicksand-semibold';
+    font-weight: 600;
+    src: url('../../../assets/font/Quicksand-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ephesisregular';
+    src: url('../../../assets/font/ephesis-regular-webfont.woff2') format('woff2'),
+        url('../../../assets/font/ephesis-regular-webfont.woff') format('woff');
+}

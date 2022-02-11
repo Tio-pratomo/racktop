@@ -1,0 +1,34 @@
+@media (max-width: 575px) {
+    /* 
+    SECTION NAVBAR
+*/
+
+    /* 
+        SECTION BANNER
+    */
+    .banner {
+        display: block;
+        padding: 2rem 0.625rem 0;
+
+        &__heading {
+            width: 100%;
+            font-size: $font-title;
+        }
+
+        &__description {
+            width: 100%;
+        }
+    }
+
+    /* 
+        SECTION CATEGORY
+    */
+    .category {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}

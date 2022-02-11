@@ -1,0 +1,16 @@
+/* ----------------------------------------------------- HEADING ---------------------------------------------------- */
+@mixin heading($size: 1rem, $margin-size) {
+    font-size: $size;
+    text-align: center;
+    font-family: 'Quicksand-bold';
+    margin: $margin-size;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 4px;
+        margin: 5px auto 0;
+        background-color: $quaternary-color;
+    }
+}
