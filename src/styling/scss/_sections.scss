@@ -1,15 +1,41 @@
+@use 'sass:math';
+
 /* ------------------------------------------------- START MAIN NAV ------------------------------------------------- */
+
 .main-nav {
     width: 100%;
-    height: 50px;
     background-color: $primary-color;
     color: $secondary-color;
     padding: 0 50px;
-    display: flex;
+    display: none;
+    transition: all 2s linear;
+    opacity: 0;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 1;
+
+    &.active-nav {
+        display: block;
+        opacity: 1;
+
+        & + .responsive__menu-wrapper {
+            top: 10rem;
+            transition: top 0.7s;
+        }
+
+        & ~ .banner {
+            margin-top: 13rem;
+            transition: margin-top 0.7s;
+        }
+    }
+
+    @include lg {
+        display: flex;
+        min-height: 50px;
+        opacity: 1;
+    }
 
     &__brand-logo--link {
         font-size: 2.375rem;
@@ -55,23 +81,115 @@
             width: 100%;
         }
     }
+
+    @media (max-width: 960px) {
+        &__brand-logo--link {
+            display: none;
+        }
+
+        &__container-list {
+            display: block;
+        }
+
+        &__link-list {
+            padding: 1rem 0;
+        }
+    }
 }
+
+// RESPONSIVE NAV
+.responsive__menu-wrapper {
+    width: 100%;
+    height: 50px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: top 0.7s;
+
+    @include lg {
+        display: none;
+    }
+
+    &--brand {
+        font-size: 2rem;
+        font-family: 'ephesisregular', serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: $secondary-color;
+        height: 100%;
+
+        &:hover {
+            color: lighten($primary-color, 60%);
+        }
+    }
+
+    .menu-burger {
+        width: 35px;
+        height: 25px;
+        position: relative;
+
+        .line-top {
+            @include line-menu();
+            top: 0;
+        }
+
+        .line-center {
+            @include line-menu();
+            top: 50%;
+            width: 75%;
+        }
+
+        .line-bottom {
+            @include line-menu();
+            top: 100%;
+        }
+    }
+
+    .menu-active {
+        .line-top {
+            top: 50%;
+            transform: rotate(45deg) translate(0, -50%);
+        }
+
+        .line-center {
+            opacity: 0;
+            left: -5px;
+            width: 0;
+        }
+
+        .line-bottom {
+            top: 50%;
+            transform: rotate(-45deg) translate(0, -50%);
+        }
+    }
+}
+
 /* -------------------------------------------------- END MAIN NAV -------------------------------------------------- */
 
 /* ------------------------------------------------- SECTION BANNER ------------------------------------------------- */
 .banner {
     margin-top: 50px;
+    padding: 3rem;
     background-image: url(../../../assets/images/Meja\ meeting-3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 42vmax;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 15vmax;
     color: $secondary-color;
+
+    @include md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15vmax;
+        height: 42vmax;
+    }
 
     &__heading {
         margin-bottom: 2rem;
@@ -91,23 +209,31 @@
     padding: 10vmax 3vmax 2rem;
 
     &__heading {
-        @include heading($font-title, 0 auto);
+        @include heading($font-title, 0 auto 2rem);
     }
 
-    &__container {
-        display: flex;
-        margin-top: 4vmax;
-        justify-content: center;
-        gap: 1rem;
+    &__description {
+        font-size: $font-details;
+        padding: 1.5rem 0;
     }
 
     &__image-item {
-        flex-basis: 25%;
-        border: 0.11rem solid $dark;
+        border: 0.05rem solid $quaternary-color;
+        width: 100%;
+        overflow: hidden;
+
+        &:hover {
+            img {
+                transition-duration: 600ms;
+                transition-property: all;
+                transform: scale(1.1);
+            }
+        }
 
         &--room {
             width: 100%;
             height: 11.25rem;
+            cursor: pointer;
         }
 
         &--text {
@@ -122,15 +248,20 @@
 .about-us {
     padding: 1rem 3vmax 2rem;
     width: 100%;
+    background-color: $quaternary-color;
+    color: $light;
 
     &__heading {
-        @include heading($font-title, 5rem auto 2rem);
+        @include heading($size: $font-title, $margin-size: 5rem auto 2rem, $color: $light);
     }
 
     &__description {
         line-height: 1.5;
         font-size: $font-details;
-        padding: 0 2rem;
+
+        @include lg {
+            padding: 0 2rem;
+        }
 
         &--heading-line {
             font-size: 2rem;
@@ -153,23 +284,193 @@
     &__description {
         line-height: 1.5;
         font-size: $font-details;
-        padding: 0 2rem;
+
+        @include lg {
+            padding: 0 2rem;
+        }
     }
 
     &__container-image {
-        display: flex;
-        padding: 2rem 2rem;
-        gap: 1.25rem;
+        @include lg {
+            padding: 2rem;
+        }
 
         &__item {
+            box-shadow: 0 15px 5px -10px rgba($dark, 0.5);
+            border: 0.05rem solid rgba($dark, 0.4);
+            border-radius: 10px;
+
             &--image {
-                width: 12.5rem;
+                width: 100%;
+                height: 7rem;
+                padding: 0.5rem;
+
+                &:hover {
+                    filter: grayscale(1);
+                }
             }
 
             &--text {
                 text-align: center;
                 padding: 0.5rem 0;
+                font-family: 'Quicksand-semibold';
             }
         }
+    }
+}
+
+/* ---------------------------------------------------- START FAQ --------------------------------------------------- */
+.faq {
+    padding: 1rem 3vmax 2rem;
+
+    &__heading {
+        @include heading($font-title, 5rem auto 2rem);
+    }
+
+    &__container {
+        padding: 0.625rem;
+
+        @include lg {
+            padding: 1rem 2rem;
+        }
+
+        &__btn {
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background-color: $quaternary-color;
+            border: 0;
+            border-radius: math.div(10rem, 16);
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($quaternary-color, 5%);
+            }
+
+            span {
+                display: block;
+                color: $light;
+                font-size: $font-details;
+            }
+
+            i {
+                display: block;
+                color: $light;
+            }
+        }
+
+        &__accordion {
+            border: math.div(0.75rem, 16) solid $dark;
+            margin-top: 0.75rem;
+            padding: 1rem 1.5rem;
+            border-radius: math.div(10rem, 16);
+            display: none;
+
+            &--text {
+                line-height: 1.5;
+            }
+        }
+    }
+
+    // utility accordion
+    .active-accordion {
+        display: block;
+    }
+
+    .disable-accordion {
+        display: none;
+    }
+}
+
+/* -------------------------------------------------- START FIND-ME ------------------------------------------------- */
+.find-me {
+    padding: 1rem 3vmax 2rem;
+
+    &__heading {
+        @include heading($font-title, 5rem auto 2rem);
+    }
+
+    &__subtitle {
+        padding: 0.375rem 0;
+        margin-bottom: 1.25rem;
+        font-size: $font-subtitle;
+        font-family: 'Quicksand-semibold';
+    }
+
+    &__address p {
+        padding: 0.375rem 0;
+        font-size: $font-details;
+    }
+
+    &__map-image {
+        width: 100%;
+        height: 18.75rem;
+    }
+}
+
+/* -------------------------------------------- SECTION FOOTER / CLOSING -------------------------------------------- */
+
+.closing {
+    padding: 2rem 3vmax 2rem;
+    background-color: $tertiary-color;
+    color: $light;
+
+    &__subtitle {
+        padding: 0.375rem 0;
+        margin-bottom: 1.25rem;
+        font-size: $font-subtitle;
+        font-family: 'Quicksand-semibold';
+    }
+
+    &__item__social-media {
+        & a:nth-of-type(2) {
+            margin: 0 1.125rem;
+        }
+
+        i {
+            color: $quaternary-color;
+
+            &:hover {
+                color: lighten($quaternary-color, 20%);
+            }
+        }
+    }
+
+    &__item__agreement {
+        a {
+            display: block;
+            color: $light;
+            text-decoration: none;
+            padding: 0.5rem 0;
+
+            &:hover {
+                color: $quaternary-color;
+            }
+        }
+    }
+
+    &__item__copyright {
+        p {
+            padding: 0.5rem 0;
+            font-size: $font-details;
+        }
+    }
+}
+
+/* ------------------------------------------------- SECTION PRIVACY ------------------------------------------------ */
+.privacy {
+    margin-top: 50px;
+
+    &__main-title {
+        font-size: $font-title;
+        font-family: 'Quicksand-bold';
+        margin-top: 5rem;
+    }
+
+    &__description {
+        margin: 1.5rem 0;
+        line-height: 1.5;
     }
 }

@@ -14,3 +14,24 @@ $font-body-text: 1.25rem;
 $font-subtitle: 1.5rem;
 $font-title: 2.125rem;
 $font-header: 2.75rem;
+
+/* ------------------------------------------- BREAKPOINT FOR MEDIA QUERY ------------------------------------------- */
+$breakpoint: (
+    'xs': 0,
+    'sm': 480px,
+    'md': 720px,
+    'lg': 960px,
+    'xl': 1200px,
+);
+
+/* --------------------------------------------------- GRID SYSTEM -------------------------------------------------- */
+$grid-columns: 12;
+
+$grid-gaps: (
+    '0': 0,
+    '1': 10px,
+    '2': 20px,
+    '3': 30px,
+);
+
+$layout-flex: flex-start, flex-end, center, space-between, space-around;
