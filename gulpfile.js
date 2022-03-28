@@ -1,8 +1,9 @@
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
 
 function buildStyles() {
-    return src('src/styling/scss/**/*.scss').pipe(sass()).pipe(dest('src/styling/css/'));
+    return src('src/styling/scss/**/*.scss').pipe(sass()).pipe(autoprefixer()).pipe(dest('src/styling/css/'));
 }
 
 function watchTask() {

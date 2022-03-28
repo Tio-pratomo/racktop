@@ -7,16 +7,16 @@
         "build": "rm -rf dist/* && parcel build src/*.html --public-url ./",
         "gulp": "gulp"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://race211@bitbucket.org/race211/race211.bitbucket.io.git"
-    },
-    "keywords": [],
+    "keywords": [
+        "landing page",
+        "furniture"
+    ],
     "author": "",
     "license": "ISC",
     "homepage": "https://bitbucket.org/race211/race211.bitbucket.io#readme",
     "devDependencies": {
         "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
         "gulp-sass": "^5.1.0",
         "parcel": "^2.2.1",
         "sass": "^1.49.0"
