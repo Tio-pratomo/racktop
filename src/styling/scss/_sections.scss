@@ -2,6 +2,12 @@
 
 /* ------------------------------------------------- START MAIN NAV ------------------------------------------------- */
 
+body {
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
 .main-nav {
     width: 100%;
     background-color: $primary-color;
@@ -12,7 +18,7 @@
     opacity: 0;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
 
@@ -26,7 +32,7 @@
         }
 
         & ~ .banner {
-            margin-top: 13rem;
+            margin-top: 2rem;
             transition: margin-top 0.7s;
         }
     }
@@ -174,7 +180,6 @@
 
 /* ------------------------------------------------- SECTION BANNER ------------------------------------------------- */
 .banner {
-    margin-top: 50px;
     padding: 3rem;
     background-image: url(../../../assets/images/meja-meeting-3.png);
     background-position: center;
@@ -184,11 +189,14 @@
 
     @include md {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 0 15vmax;
         height: 42vmax;
+    }
+
+    @include xs {
+        padding: 8vmax 2vmax;
     }
 
     &__heading {
